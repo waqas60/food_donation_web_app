@@ -1,16 +1,56 @@
-<<<<<<< HEAD
-# React + Vite
+Food Loan Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React.js web application that connects **Restaurants** and **Suppliers** to reduce food waste by donating surplus food to those in need. 
 
-Currently, two official plugins are available:
+🌐 Live Demo
+ (https://feedsy.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 **Login Page**: Role-based login (Restaurant or Supplier).
+- 🏠 **Landing Page**: Welcome section, mission, how it works, and a call to action.
+- 🍽️ **Restaurant Dashboard**:
+  - Upload food details (name, quantity, expiry, image).
+  - Track past donations and statuses.
+- 🚚 **Supplier Dashboard**:
+  - View available donations.
+  - Accept and schedule pickups.
+  - Mark deliveries as complete with notes or proof image.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# food_donation_platform
->>>>>>> 95180abe8b4639cbdf772f42fe64e04a2d9bc343
+---
+
+🧩 Component Overview
+
+`Home.jsx`
+Landing page including:
+- Hero section with intro
+- Mission statement
+- How it works
+- Navigation to login/signup
+
+`Login.jsx`
+Role-based login with navigation to:
+- `/restaurant-dashboard`
+- `/supplier-dashboard`
+
+> ✨ Pre-filled demo login:  
+> `email: admin@gmail.com`  
+> `password: admin`
+
+`RestaurantDashboard.jsx`
+Dashboard for restaurant users to:
+- Upload food (name, quantity, expiry, image)
+- View list of donations
+- Track status (Pending, Delivered)
+
+`SupplierDashboard.jsx`
+Dashboard for supplier users to:
+- View available food donations
+- Accept and schedule pickups
+- Upload proof of delivery (image, note)
+
+🛠️ Tech Stack
+
+- **React.js**
+- **Tailwind CSS** for styling
+- **React Router** for navigation
