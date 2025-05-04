@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Login from '../pages/Login';
 
 const navPaths = [
   { to: "/", name: "Home" },
@@ -31,6 +32,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        <Link to="/login">
+          <button className="px-6 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition">
+            Login
+          </button>
+        </Link>
       </nav>
     </header>
   );
