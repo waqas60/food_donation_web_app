@@ -6,7 +6,6 @@ const navPaths = [
   { to: "/", name: "Home" },
   { to: "/restaurants", name: "Restaurants" },
   { to: "/suppliers", name: "Suppliers" },
-  { to: "/status", name: "Status" }
 ];
 
 const Navbar = () => {
